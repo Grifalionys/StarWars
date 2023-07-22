@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_custom"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_info_name"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_starship" />
+
+    <TextView
+        android:id="@+id/itv_info_model"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/model"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_info_manufacturer"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/manufacturer"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_model" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/death_star"
+        app:layout_constraintEnd_toEndOf="@+id/tv_info_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_name" />
+
+    <TextView
+        android:id="@+id/tv_model"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/model_info"
+        app:layout_constraintEnd_toEndOf="@+id/itv_info_model"
+        app:layout_constraintStart_toStartOf="@+id/itv_info_model"
+        app:layout_constraintTop_toBottomOf="@+id/itv_info_model" />
+
+    <TextView
+        android:id="@+id/tv_manufacturer"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/manufacturer_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_manufacturer" />
+
+    <ImageView
+        android:id="@+id/btnFavourite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_close_24" />
+
+    <TextView
+        android:id="@+id/tvInfoPassengers"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/passengers"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_manufacturer"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/tv_manufacturer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_manufacturer" />
+
+    <TextView
+        android:id="@+id/tv_passengers"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/passengers_info"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoPassengers"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoPassengers"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoPassengers" />
+
+    <TextView
+        android:id="@+id/tv_starship"
+        style="@style/TextViewWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/starship"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnAddFavourite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+    <ImageView
+        android:id="@+id/btnDeleteStarship"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_close_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

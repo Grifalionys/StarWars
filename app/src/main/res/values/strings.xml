@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Star Wars</string>
+    <string name="menu">Меню</string>
+    <string name="favourite">Избранное</string>
+    <string name="people">Персонажи</string>
+    <string name="starships">Звездолеты</string>
+    <string name="planets">Планеты</string>
+    <string name="main">Главная</string>
+    <string name="name">Имя:</string>
+    <string name="death_star">Death Star</string>
+    <string name="model">Модель:</string>
+    <string name="model_info">DS-1 Orbital Battle Station</string>
+    <string name="manufacturer">Производитель:</string>
+    <string name="manufacturer_info">Imperial Department of Military Research, Sienar Fleet Systems</string>
+    <string name="passengers">Кол-во пассажиров:</string>
+    <string name="passengers_info">10</string>
+    <string name="starship">Космический корабль</string>
+    <string name="search">Поиск...</string>
+    <string name="nameInfo">Имя:</string>
+    <string name="gender">Пол:</string>
+    <string name="starship_pilot">Кол-во пилотируемых звездолетов:</string>
+    <string name="name_name">Люк</string>
+    <string name="male">Мужской</string>
+    <string name="two">2</string>
+    <string name="character">Персонаж</string>
+</resources>
